@@ -6,7 +6,7 @@ import Worker from "./app/worker";
  * @function
  * @returns {Client}
  */
-export declare function createClient(broker?: string, backend?: string, queue?: string): Client;
+export declare function createClient(broker: string, backend: string, queue: string, opts: any): Client;
 /**
  * @description Basic function for creating celery worker
  *

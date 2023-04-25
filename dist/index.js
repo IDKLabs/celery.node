@@ -8,8 +8,8 @@ const worker_1 = require("./app/worker");
  * @function
  * @returns {Client}
  */
-function createClient(broker = "amqp://", backend = "amqp://", queue = "celery") {
-    return new client_1.default(broker, backend, queue);
+function createClient(broker = "amqp://", backend = "amqp://", queue = "celery", opts) {
+    return new client_1.default(broker, backend, queue, opts);
 }
 exports.createClient = createClient;
 /**
